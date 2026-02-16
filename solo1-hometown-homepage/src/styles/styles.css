@@ -1,0 +1,107 @@
+:root {
+    --persian-red: #CC3333;
+    --persian-light: #CFD1E2;
+    --persian-firuze-blue: #91e6dc;
+    --persian-medium-blue: #0067A5;
+    --persian-indigo: #270f60;
+
+    --RED: var(--persian-red);
+    --LIGHT: var(--persian-light);
+    --AQUA: var(--persian-firuze-blue);
+    --LIGHT-BLUE: var(--persian-medium-blue);
+    --DARK-BLUE: var(--persian-indigo);
+
+    /* Original Palette: https://scrimba.com/links/hometown-palette */
+    /* --RED: #E63946;
+    --LIGHT: #F1FAEE;
+    --AQUA: #A8DADC;
+    --LIGHT-BLUE: #457B9D;
+    --DARK-BLUE: #1D3557; */
+}
+
+body {
+    margin: 0;
+    text-align: center;
+
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+
+#hero-section {
+    min-height: 500px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../media/images/sharif-campus.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+
+#hero-section h1 {
+    margin: 10px;
+    padding: 6px 10px;
+    background-color: var(--DARK-BLUE);
+    border-radius: 10px;
+}
+
+#hero-section h2 {
+    width: 500px;
+    margin: 10px;
+    padding: 6px 10px;
+    background-color: var(--LIGHT-BLUE);
+    border-radius: 10px;
+}
+
+#activities-section {
+    padding: 40px 0 24px 0;
+    color: var(--DARK-BLUE);
+    background-color: var(--LIGHT);
+    overflow: auto;
+}
+
+#activities-title {
+    margin: 0 0 55px 0;
+    font-size: 24px;
+}
+
+#activities-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.activity-div {
+    width: 200px;
+}
+
+.activity-img {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#card {
+    margin: 50px auto 50px auto;
+    width: 400px;
+
+    color: var(--DARK-BLUE);
+    background-color: var(--AQUA);
+    box-shadow: 0 6px var(--DARK-BLUE);
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+#profile-img {
+    width: 180px;
+    border-radius: 10px;
+    margin: 10px;
+}

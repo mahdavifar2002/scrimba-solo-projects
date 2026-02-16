@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/verdana" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="side">
+                <h3>HOME</h3>
+                <div class="score-lcd">
+                    <div class="overlay">
+                        <p class="score score-leading-zeros">88</p>
+                    </div>
+                    <div class="overlay">
+                        <p class="score" id="home-score"> 0</p>
+                    </div>
+                </div>
+                <div class="buttons-container">
+                    <button class="inc-button" onclick="increment(true, 1)">+1</button>
+                    <button class="inc-button" onclick="increment(true, 2)">+2</button>
+                    <button class="inc-button" onclick="increment(true, 3)">+3</button>
+                </div>
+            </div>
+            <div class="side">
+                <h3>GUEST</h3>
+                <div class="score-lcd">
+                    <div class="overlay">
+                        <p class="score score-leading-zeros">88</p>
+                    </div>
+                    <div class="overlay">
+                        <p class="score" id="guest-score"> 0</p>
+                    </div>
+                </div>
+                
+                <div class="buttons-container">
+                    <button class="inc-button" onclick="increment(false, 1)">+1</button>
+                    <button class="inc-button" onclick="increment(false, 2)">+2</button>
+                    <button class="inc-button" onclick="increment(false, 3)">+3</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
